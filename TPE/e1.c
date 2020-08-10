@@ -8,18 +8,18 @@ int main(int argc, char const *argv[])
 
     fillWithValue(number12, 12);
     
-    BigNumber * number95 = create();
+    BigNumber * number95 = createBigNumber();
     fillWithValue(number95, 95);
 
-    BigNumber * number107 = create();
+    BigNumber * number107 = createBigNumber();
     add(number12, number95, number107);
 
     printf("should print 95 \n");
-    print(number95);  
+    printBigNumber(number95);  
     printf("should print 12 \n");
-    print(number12);  
+    printBigNumber(number12);  
     printf("should print 107 \n");
-    print(number107);    
+    printBigNumber(number107);    
 
     dispose(number107);
     dispose(number95);

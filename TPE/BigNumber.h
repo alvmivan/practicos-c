@@ -22,11 +22,11 @@ void add(BigNumber * lhs, BigNumber * rhs, BigNumber * result);
 void fillWithValue(BigNumber * number, int value);
 
 // retorna un puntero ya alocado a un numero grande equivalente a cero listo para usarse
-BigNumber * create();
+BigNumber * createBigNumber();
 // libera la memoria de un puntero previamente alocado si es un puntero válido
 void dispose(BigNumber * number);
 
 // imprime el valor del número y un enter
 // requiere un puntero válido
-void print(BigNumber * number);
+void printBigNumber(BigNumber * number);
 

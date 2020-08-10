@@ -38,7 +38,7 @@ void fillWithValue(BigNumber * number, int value)
 
 
 // retorna un puntero ya alocado a un numero grande equivalente a cero listo para usarse
-BigNumber * create()
+BigNumber * createBigNumber()
 {
     BigNumber * number = (BigNumber *) malloc(sizeof(BigNumber)); 
     fillWithValue(number, 0);// lo lleno de ceros
@@ -54,7 +54,7 @@ void dispose(BigNumber * number)
 
 // imprime el valor del número y un enter
 // requiere un puntero válido
-void print(BigNumber * number)
+void printBigNumber(BigNumber * number)
 {
     // un flag para evitar imprimir los 0's no significativos
     int printing = 0;
