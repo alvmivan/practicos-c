@@ -69,12 +69,12 @@ void print(BigNumber * number)
 
 
 int main(int argc, char const *argv[])
-{
+{   
     
+    BigNumber stack12;
+    BigNumber * number12 = &stack12;
     
-    BigNumber * number12 = create();
     fillWithValue(number12, 12);
-
     
     BigNumber * number95 = create();
     fillWithValue(number95, 95);
